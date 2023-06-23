@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hogwarts - School of Witchcraft and Wizardy</title>
+  <link rel="icon" href="img/title.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script> -->
+</head>
+<body>
+  <div class="cube">
+
+    <div class="top"></div>
+
+    <div>
+
+        <span style="--i:0"></span>
+
+        <span style="--i:1"></span>
+
+        <span style="--i:2"></span>
+
+        <span style="--i:3"></span>
+
+    </div>
+
+</div>
+<div class="sorting" id="sorting-quiz">
+        <!-- <div class="overlay close-quiz"></div> -->
+        <div class="quiz-container">
+          <!-- <span class="close-ico close-quiz"><i class="fa-solid fa-circle-xmark"></i></span>  -->
+          <div class="questions">
+            <div class="quiz">
+              <h1>1) Which of your skills are you most proud of ?</h1>
+              <div class="quiz-options">
+                <h3>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="one" id="one-one" value="10">
+                  <label for="one-one"><i class="fa-solid fa-star"></i>1) Absorbing new information</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="one" id="one-two" value="20">
+                  <label for="one-two"><i class="fa-solid fa-star"></i>2) Making new friends</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="one" id="one-three" value="40">
+                  <label for="one-three"><i class="fa-solid fa-star"></i>3) Getting what I want</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="one" id="one-four" value="30">
+                  <label for="one-four"><i class="fa-solid fa-star"></i>4) Keeping secrets</label>
+                </div>
+              </div>
+            </h3>
+            </div>
+            <pre>
+
+            </pre>
+            <div class="quiz">
+              <h1>2) What do you like to do most in your free time ?</h1>
+              <div class="quiz-options">
+                <h3>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="two" id="two-one" value="20">
+                  <label for="two-one"><i class="fa-solid fa-star"></i>1) Read a book</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="two" id="two-two" value="10">
+                  <label for="two-two"><i class="fa-solid fa-star"></i>2) Help someone do their homework</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="two" id="two-three" value="40">
+                  <label for="two-three"><i class="fa-solid fa-star"></i>3) Making fun of someone</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="two" id="two-four" value="30">
+                  <label for="two-four"><i class="fa-solid fa-star"></i>4) Sit back and relax</label>
+                </div>
+              </div>
+            </h3>
+            </div>
+            <pre>
+            
+            </pre>
+            <div class="quiz">
+              <h1>3) How would you describe your friend circle ?</h1>
+              <div class="quiz-options">
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="three" id="three-one" value="30">
+                  <label for="three-one"><i class="fa-solid fa-star"></i>1) Large because A lot of people know
+                    me</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="three" id="three-two" value="10">
+                  <label for="three-two"><i class="fa-solid fa-star"></i>2) Not that big but not too small
+                    either</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="three" id="three-three" value="40">
+                  <label for="three-three"><i class="fa-solid fa-star"></i>3) Only hang out with a limited Amount of
+                    friends</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="three" id="three-four" value="20">
+                  <label for="three-four"><i class="fa-solid fa-star"></i>4) I like to be on my own</label>
+                </div>
+              </div>
+            </div>
+            <pre>
+
+            </pre>
+            <div class="quiz">
+              <h1>4) What kind of house would you like to own ?</h1>
+              <div class="quiz-options">
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="four" id="four-one" value="40">
+                  <label for="four-one"><i class="fa-solid fa-star"></i>1) A Mansion</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="four" id="four-two" value="30">
+                  <label for="four-two"><i class="fa-solid fa-star"></i>2) A big Bungalow with a fire place</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="four" id="four-three" value="10">
+                  <label for="four-three"><i class="fa-solid fa-star"></i>3) It doesn't Matter as long as it feels
+                    comfortable</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="four" id="four-four" value="20">
+                  <label for="four-four"><i class="fa-solid fa-star"></i>4) A reasonable house with all my
+                    neccessities</label>
+                </div>
+              </div>
+            </div>
+            <pre>
+
+            </pre>
+            <div class="quiz">
+              <h1>5) If you made a mess, What would you do about it ?</h1>
+              <div class="quiz-options">
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="five" id="five-one" value="30">
+                  <label for="five-one"><i class="fa-solid fa-star"></i>1) Own up to it straightaway, Apologize and
+                    clean it up</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="five" id="five-two" value="40">
+                  <label for="five-two"><i class="fa-solid fa-star"></i>2) Leave it there and quietly sneak
+                    away</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="five" id="five-three" value="20">
+                  <label for="five-three"><i class="fa-solid fa-star"></i>3) Clean it up quickly. So no one will ever
+                    know</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="" id="five-four" value="10">
+                  <label for="five-four"><i class="fa-solid fa-star"></i>4) Call your friends and put it right with
+                    their help</label>
+                </div>
+              </div>
+            </div>
+            <pre>
+
+            </pre>
+            <div class="quiz">
+              <h1>6) How would the people you know describe you ?</h1>
+              <div class="quiz-options">
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="six" id="six-one" value="20">
+                  <label for="six-one"><i class="fa-solid fa-star"></i>1) Smart</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="six" id="six-two" value="30">
+                  <label for="six-two"><i class="fa-solid fa-star"></i>2) Intrested in everything</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="six" id="six-three" value="40">
+                  <label for="six-three"><i class="fa-solid fa-star"></i>3) Bully</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="six" id="six-four" value="10">
+                  <label for="six-four"><i class="fa-solid fa-star"></i>4) Normal</label>
+                </div>
+              </div>
+            </div>
+            <pre>
+
+            </pre>
+            <div class="quiz">
+              <h1>7) What is more important for you ?</h1>
+              <div class="quiz-options">
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="seven" id="seven-one" value="30">
+                  <label for="seven-one"><i class="fa-solid fa-star"></i>1) Freedom</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="seven" id="seven-two" value="10">
+                  <label for="seven-two"><i class="fa-solid fa-star"></i>2) Family</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="seven" id="seven-three" value="40">
+                  <label for="seven-three"><i class="fa-solid fa-star"></i>3) Power</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="seven" id="seven-four" value="20">
+                  <label for="seven-four"><i class="fa-solid fa-star"></i>4) Friends</label>
+                </div>
+              </div>
+            </div>
+            <pre>
+
+            </pre>
+            <div class="quiz">
+              <h1>8) On your summer break from Hogwarts, What you do ?</h1>
+              <div class="quiz-options">
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="eight" id="eight-one" value="40">
+                  <label for="eight-one"><i class="fa-solid fa-star"></i>1) Party</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="eight" id="eight-two" value="20">
+                  <label for="eight-two"><i class="fa-solid fa-star"></i>2) Help around the house</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="eight" id="eight-three" value="10">
+                  <label for="eight-three"><i class="fa-solid fa-star"></i>3) Study for next year</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="eight" id="eight-four" value="30">
+                  <label for="eight-four"><i class="fa-solid fa-star"></i>4) Practice magic</label>
+                </div>
+              </div>
+            </div>
+            <pre>
+
+            </pre>
+            <div class="quiz">
+              <h1>9) What would you do if a thief broke into your home ?</h1>
+              <div class="quiz-options">
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="nine" id="nine-one" value="40">
+                  <label for="nine-one"><i class="fa-solid fa-star"></i>1) I would fight him</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="nine" id="nine-two" value="20">
+                  <label for="nine-two"><i class="fa-solid fa-star"></i>2) I would Hide</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="nine" id="nine-three" value="10">
+                  <label for="nine-three"><i class="fa-solid fa-star"></i>3) I would obey the thief</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="nine" id="nine-four" value="30">
+                  <label for="nine-four"><i class="fa-solid fa-star"></i>4) I would hide</label>
+                </div>
+              </div>
+            </div>
+            <pre>
+
+            </pre>
+            <div class="quiz">
+              <h1>10) If you were a wizard and you saw a wounded animal what would you do ?</h1>
+              <div class="quiz-options">
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="ten" id="ten-one" value="40">
+                  <label for="ten-one"><i class="fa-solid fa-star"></i>1) I would heal even though i am an inexperienced
+                    wizard</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="ten" id="ten-two" value="20">
+                  <label for="ten-two"><i class="fa-solid fa-star"></i>2) I would run away</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="ten" id="ten-three" value="30">
+                  <label for="ten-three"><i class="fa-solid fa-star"></i>3) I would call a more experienced
+                    wizard</label>
+                </div>
+                <div class="option">
+                  <input class="quiz-input" type="radio" name="ten" id="ten-four" value="10">
+                  <label for="ten-four"><i class="fa-solid fa-star"></i>4) I would not know what to do</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button onclick="submit()">GET SORTED</button>
+        </BODY
