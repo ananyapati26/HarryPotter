@@ -68,30 +68,7 @@ body{
     }
 }
 
- .btn {
-     
-    padding: 12px 30px;
-    margin-top: 15px; 
-     /* background-color: #880000;  */
-     color: #dcd218;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 3px;
-    transition: background-color 0.3s;
-    box-shadow: 0 0 5px cyan,0 0 10px cyan;
-  }
-  .btn:hover {
- 
-    box-shadow: 0 0 5px cyan , 0 0 10px cyan , 0 0 15px cyan ,0 0 25px cyan ;
-  } 
 
- @media screen  and (max-width:1080px){
-    .btn{
-        font-size: 10px;
-        border-radius: 2px;
-    } 
-    
-  } 
   
  
   .sidebar-left nav ul li {
@@ -120,3 +97,16 @@ body{
     text-align: center;
    
   }
+  @media screen and (max-width:900px) {
+    body{
+      perspective: 10000px;
+
+    }
+    #spin{
+      height:130px;
+      width:200px;
+    }
+   
+    }
+
+  
