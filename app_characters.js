@@ -7,7 +7,7 @@ fetch("https://hp-api.onrender.com/api/characters").then((data)=>{
     let tableData="";
     objectData.map((values)=>{
         tableData+=`          <tr>
-        <td class="img"><img src="${values.image}" alt="error"></td>
+        <td class="img"><img src="${values.image}" onerror="this.style.display='none'"></td>
         <td class="name">${values.name}</td>
         <td class="species">${values.species}</td>
         <td class="actor">${values.actor}</td>
