@@ -1,22 +1,21 @@
-fetch("https://hp-api.onrender.com/api/characters").then((data)=>{
-    return data.json();
-})
-.then((objectData)=>{
-    console.log(objectData[0].name);
-    console.log(objectData);
-    let tableData="";
-    objectData.map((values)=>{
-        tableData+=`          <tr>
-        <td class="img"><img src="${values.image}" onerror="this.style.display='none'"></td>
-        <td class="name">${values.name}</td>
-        <td class="species">${values.species}</td>
-        <td class="actor">${values.actor}</td>
+fetch("https://hp-api.onrender.com/api/characters")
+  .then((response) => response.json())
+  .then((objectData) => {
+    const charactersWithImages = objectData.filter((character) => {
+      return isValidImageURL(character.image);
+    });
+    function isValidImageURL(url) {
+      return url && url.trim() !== ':';
+    }
+    let tableData = "";
+    charactersWithImages.map((values) => {
+      tableData += `
+        <tr>
+          <td class="img"><img src="${values.image}" onerror="this.style.display='none'"></td>
+          <td class="name">${values.name}</td>
+          <td class="species">${values.species}</td>
+          <td class="actor">${values.actor}</td>
         </tr>`;
-        // count+=1;
-        // if(count>=4){
-            
-        // }
-});
-document.getElementById("table_body").innerHTML=tableData;
-})
-let count=0;
+    });
+    document.getElementById("table_body").innerHTML = tableData;
+  });
