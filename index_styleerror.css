@@ -1,5 +1,8 @@
 body {
     background-image: url("img/back4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
   }
   svg {
     position: absolute;
