@@ -1,0 +1,58 @@
+*{
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+ body{ 
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  min-height: 100vh;
+   /* background: radial-gradient(rgb(49, 14, 50), #1f1013); */
+  /* background: linear-gradient(90deg,#050b3a,#121a63, #940f39,#490d20) */
+   /* background-color: #10141b; */
+   /* background: #ffffff;  */
+  background-image: url("img/houses3.jpg");
+  
+
+} 
+.quiz-container{
+  width: 900px;
+  /* background: linear-gradient(-45deg, #3e3837, #4f2032, #284a57, #23564a) */
+}
+.questions{
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 80px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+  padding: 60px;
+  /* background-color: #10141b */
+  /* border-radius: 5%; */
+  margin-top: 8%;
+}
+.quiz{
+  margin-left: -5%;
+}
+.quiz-options{
+  /* align-items: center; */
+  /* justify-content: center; */
+  margin-left: 10%;
+}
+.back
+{
+  position: absolute;
+  top: 4%;
+  left: 1.5%;
+}
