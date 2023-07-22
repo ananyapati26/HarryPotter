@@ -8,54 +8,12 @@
   <title>SPIDERWEB</title>
   <link rel="stylesheet" href="about.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-  <style>
-    .loader {
-  position: fixed;
-  z-index: 99;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.loader > img {
-  width: 300px;
-}
-
-.loader.hidden {
-  animation: fadeOut 3s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeOut {
-  100% {
-      opacity: 0;
-      visibility: hidden;
-  }
-}
-
-.thumb {
-  height: 100px;
-  border: 1px solid black;
-  margin: 10px;
-}
-    </style>
 
 </head>
 
 <body>
-  <div class="loader" style="background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); 
-
-background: linear-gradient(to right, #24243e, #302b63, #0f0c29);border: 4px solid gold;   border-style: double;">
-
-  <img src="harry-potter.gif" alt="Loading..." />
-
-</div>
-
+  
   <div class="bgAnimation" id="bgAnimation">
     <div class="backgroundAmim">
 
@@ -63,10 +21,15 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29);border: 4px sol
   </div>
 
   <div class="container">
+    <br>
+    <a class="hmo" href="index_homepage.html"><img src="home.png" height="40px" width="40px"></a>
     <h1><span>SPIDER</span>WEB</h1>
+    
     <nav>
 
       <ul>
+       
+        <br>
         <li>
           <h2>Ananya Pati</h2>
           <a href="https://github.com/ananyapati26"><i class="fa-brands fa-github"></i></a>
@@ -92,7 +55,10 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29);border: 4px sol
           <a href="https://github.com/Devanshbansal02"><i class="fa-brands fa-github"></i></a>
           <a href="https://www.instagram.com/my_re_life_/"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://www.linkedin.com/in/devansh-bansal-72946224a"><i class="fa-brands fa-linkedin"></i></a>
+          
         </li>
+        
+        
       </ul>
       <br>
       <br>
@@ -109,18 +75,6 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29);border: 4px sol
   </div>
 
   <script src="about.js"></script>
-  <script type="text/javascript">
-
-    window.addEventListener("load", function () {
-
-    const loader = document.querySelector(".loader");
-
-    loader.className += " hidden"; // class "loader hidden"
-
-});
-
-  </script>
-
 </body>
 
 </html>
