@@ -71,8 +71,8 @@ p:hover::after {
 
 
 html {  
-background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); 
-background: linear-gradient(to right, #24243e, #302b63, #0f0c29);    
+ background: -webkit-linear-gradient(to right, #24243e, #302b63, #0b0921); 
+    background: linear-gradient(to right, #24243e, #15114a, #0b0820);   
 scroll-behavior: smooth;
 align-items: center; 
 background-position: center;
