@@ -8,6 +8,21 @@
     <link rel="stylesheet" href="index_stylefrontpage.css">
     <title>Harry Potter</title>
 </head>
+    <header>
+  <script>
+    const media = ()=>{
+        let q = matchMedia("(max-width:1000px)");
+        if(q.matches){
+            window.location="index_errorpage.html"
+        }
+        else{
+          window.location="index.html"
+        }
+    }
+    onload = media;
+    onresize = media;
+  </script>
+</header>
 <body class="home-body">
 
     <canvas id="canvas"></canvas>
