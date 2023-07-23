@@ -1,8 +1,31 @@
-.background{
-    background-image: url('img/hat.png');
-    background-attachment:fixed;
+@font-face {
+    font-family: myfont;
+    src: url(img/algerian.zip);
+}
+body{
+    background: rgb(0, 2, 146);
+    background: radial-gradient(#2121cd,#16124d,rgb(0, 0, 0));
     background-repeat: no-repeat;
-    background-position: center;
+    background-attachment: fixed;
     background-size: cover;
-    /* filter: blur(5px); */
+}
+h1{
+    font-family: myfont;
+    color: #eeba30;
+}
+.hhh
+{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+.container{
+    position: absolute;
+    top: 45%;
+    left: 35%;
+}
+.sort-btn2{
+    position: absolute;
+    top: 45%;
+    left: 55%;
 }
