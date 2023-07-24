@@ -110,7 +110,7 @@ function submit()
   {
    window.location="index_ravenclaw.html"
   }
-  if(s>h && s>r && s>r)
+  if(s>h && s>r && s>g)
   {
    window.location="index_slytherin.html"
   }
