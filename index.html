@@ -13,14 +13,12 @@
     const media = ()=>{
         let q = matchMedia("(max-width:1000px)");
         if(q.matches){
-            window.location="index_errorpage.html"
-        }
-        else{
-          window.location="index.html"
+            window.location.href="index_errorpage.html"
         }
     }
-    Window.onload = media;
-    Window.resize = media;
+    onload = media;
+    onresize = media;
+    media();
   </script>
 </header>
 <body class="home-body">
