@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- divinectorweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animated Background using HTML and CSS | No Javascript</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index_stylegamepage.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<header>
+	<a href="index_homepage.html" class="btn"><i class="fa-solid fa-house-chimney"></i></a>
+    <!-- <a href="index_homepage.html"><img src="img/homeicon.png" width="100" height="100"/></a> -->
+	<style>
+		.loader {
+	  position: fixed;
+	  z-index: 99;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background: white;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  }
+	  
+	  .loader > img {
+	  width: 300px;
+	  }
+	  
+	  .loader.hidden {
+	  animation: fadeOut 3s;
+	  animation-fill-mode: forwards;
+	  }
+	  
+	  @keyframes fadeOut {
+	  100% {
+		  opacity: 0;
+		  visibility: hidden;
+	  }
+	  }
+	  
+	  .thumb {
+	  height: 100px;
+	  border: 1px solid black;
+	  margin: 10px;
+	  }
+	  .btn i{
+    font-size: 2em;
+
+    color: #f1b90f;
+  }
+		</style>
+	   
+</header>
+<body>
+	<div class="loader" style="background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); 
+
+
+
+	background: linear-gradient(to right, #24243e, #302b63, #0f0c29);border: 4px solid gold;   border-style: double;">
+	
+	
+	
+	  <img src="harryonbroom.gif" alt="Loading..." />
+	
+	
+	
+	</div>
+	
+  
+
+    <div class="wrapper">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+</div>
+
+<div class="banner">
+	<div class="content">
+		<h4><b>EXPLORE THE HOUSES</b></h4>
+        <button class="container"><a href="index_sorting hat.html" class="links">GET SORTED</a></button>
+        <button class="sort-btn2"><a href="index_sliderpage.html" class="links">KNOW MORE</a></button>
+        
+	</div>
+</div>
+<script type="text/javascript">
+
+    window.addEventListener("load", function () {
+
+    const loader = document.querySelector(".loader");
+
+    loader.className += " hidden"; // class "loader hidden"
+
+});
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hogwarts - School of Witchcraft and Wizardy</title>
+  <link rel="icon" href="img/title.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="stylesheet" href="index_styletimeline.css">
+  <script defer src="index_scripttimeline.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <style>
+    .loader {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .loader > img {
+  width: 300px;
+  }
+  
+  .loader.hidden {
+  animation: fadeOut 3s;
+  animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeOut {
+  100% {
+      opacity: 0;
+      visibility: hidden;
+  }
+  }
+  
+  .thumb {
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+  }
+
+  .btn i{
+    font-size: 2em;
+
+    color: #f1b90f;
+  }
+    </style>
+
+   
+</head>
+<body>
+  <header>
+    <!-- <a href="index_homepage.html"><img src="img/homeicon.png" width="100" height="100" class="back"/></a> -->
+    <a href="index_homepage.html" class="btn"><i class="fa-solid fa-house-chimney"></i></a>
+  </header>
+  <div class="loader" style="background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); 
+
+
+
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);border: 4px solid gold;   border-style: double;">
+  
+  
+  
+    <img src="harryonbroom.gif" alt="Loading..." />
+  
+  
+  
+  </div>
+  
+  
+
+  <!-- <a href="index_homepage.html"><img src="img/homeicon.png" width="100" height="100" class="back"/></a> -->
+  
+<div class="ag-timeline-block">
+    <div class="ag-timeline_title-box">
+      <div class="ag-timeline_tagline">Timeline</div>
+      <div class="ag-timeline_title">HARRY POTTER UNIVERSE</div>
+    </div>
+    <section class="ag-section">
+      <div class="ag-format-container">
+        <div class="js-timeline ag-timeline">
+          <div class="js-timeline_line ag-timeline_line">
+            <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
+          </div>
+          <div class="ag-timeline_list">
+            <div class="js-timeline_item ag-timeline_item">
+              <div class="ag-timeline-card_box">
+                <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                  <div class="ag-timeline-card_point">2001</div>
+                </div>
+                <div class="ag-timeline-card_meta-box">
+                  <div class="ag-timeline-card_meta">Harry Potter and the sorceror's stone</div>
+                </div>
+              </div>
+              <div class="ag-timeline-card_item">
+                <div class="ag-timeline-card_inner">
+                  <div class="ag-timeline-card_img-box">
+                    <img src="img/hpb1.webp" class="ag-timeline-card_img" width="50" height="750" />
+                  </div>
+                  <div class="ag-timeline-card_info">
+                    <div class="ag-timeline-card_title">Harry Potter and the sorceror's stone</div>
+                    <div class="ag-timeline-card_desc">
+                        Harry Potter and the Philosopher's Stone is a 2001 fantasy film directed by Chris Columbus and produced by David Heyman, from a screenplay by Steve Kloves, based on the 1997 novel of the same name by J. K. Rowling. It is the first instalment in the Harry Potter film series. The film stars Daniel Radcliffe as Harry Potter, with Rupert Grint as Ron Weasley, and Emma Watson as Hermione Granger. Its story follows Harry's first year at Hogwarts School of Witchcraft and Wizardry as he discovers that he is a famous wizard and begins his formal wizarding education.
+                    </div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_arrow"></div>
+              </div>
+            </div>
+  
+            <div class="js-timeline_item ag-timeline_item">
+              <div class="ag-timeline-card_box">
+                <div class="ag-timeline-card_meta-box">
+                  <div class="ag-timeline-card_meta">Harry Potter and the chambers of secrets</div>
+                </div>
+                <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                  <div class="ag-timeline-card_point">2002</div>
+                </div>
+              </div>
+              <div class="ag-timeline-card_item">
+                <div class="ag-timeline-card_inner">
+                  <div class="ag-timeline-card_img-box">
+                    <img src="img/hpb2.webp" class="ag-timeline-card_img" width="200" height="750" alt="" />
+                  </div>
+                  <div class="ag-timeline-card_info">
+                    <div class="ag-timeline-card_title">Harry Potter and the chambers of secrets</div>
+                    <div class="ag-timeline-card_desc">
+                        The story follows Harry's second year at Hogwarts School of Witchcraft and Wizardry, where the Heir of Salazar Slytherin opens the Chamber of Secrets, unleashing a monster.
+                    </div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_arrow"></div>
+              </div>
+            </div>
+  
+            <div class="js-timeline_item ag-timeline_item">
+              <div class="ag-timeline-card_box">
+                <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                  <div class="ag-timeline-card_point">2004</div>
+                </div>
+                <div class="ag-timeline-card_meta-box">
+                  <div class="ag-timeline-card_meta">Harry Potter and the prisoner of azkaban</div>
+                </div>
+              </div>
+              <div class="ag-timeline-card_item">
+                <div class="ag-timeline-card_inner">
+                  <div class="ag-timeline-card_img-box">
+                    <img src="img/hpb3.webp" class="ag-timeline-card_img" width="300" height="750" alt="" />
+                  </div>
+                  <div class="ag-timeline-card_info">
+                    <div class="ag-timeline-card_title">Harry Potter and the prisoner of azkaban</div>
+                    <div class="ag-timeline-card_desc">
+                        The film follows Harry's third year at Hogwarts and his quest to uncover the truth about his past, including the connection recently-escaped Azkaban prisoner Sirius Black has to Harry and his deceased parents.With this film, the Harry Potter series switched to a longer eighteen-month production cycle. It was the first appearance of Michael Gambon as Professor Albus Dumbledore, due to Richard Harris's death in 2002.
+                    </div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_arrow"></div>
+              </div>
+            </div>
+  
+            <div class="js-timeline_item ag-timeline_item">
+              <div class="ag-timeline-card_box">
+                <div class="ag-timeline-card_meta-box">
+                  <div class="ag-timeline-card_meta">Harry Potter and goblet of fire</div>
+                </div>
+                <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                  <div class="ag-timeline-card_point">2005</div>
+                </div>
+              </div>
+              <div class="ag-timeline-card_item">
+                <div class="ag-timeline-card_inner">
+                  <div class="ag-timeline-card_img-box">
+                    <img src="img/hpb4.webp" class="ag-timeline-card_img" width="200" height="750" alt="" />
+                  </div>
+                  <div class="ag-timeline-card_info">
+                    <div class="ag-timeline-card_title">Harry Potter and goblet of fire</div>
+                    <div class="ag-timeline-card_desc">
+                      Its story follows Harry's fourth year at Hogwarts as he is chosen by the Goblet of Fire to compete in the Triwizard Tournament.Harry Potter has a nightmare in which a Muggle caretaker is murdered after overhearing a plot by Lord Voldemort, Peter Pettigrew and another man whom Harry does not recognise.
+                    </div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_arrow"></div>
+              </div>
+            </div>
+  
+            <div class="js-timeline_item ag-timeline_item">
+              <div class="ag-timeline-card_box">
+                <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                  <div class="ag-timeline-card_point">2007</div>
+                </div>
+                <div class="ag-timeline-card_meta-box">
+                  <div class="ag-timeline-card_meta">Harry Potter and the order of phoenix</div>
+                </div>
+              </div>
+              <div class="ag-timeline-card_item">
+                <div class="ag-timeline-card_inner">
+                  <div class="ag-timeline-card_img-box">
+                    <img src="img/hpb5.webp" class="ag-timeline-card_img" width="300" height="750" alt="" />
+                  </div>
+                  <div class="ag-timeline-card_info">
+                    <div class="ag-timeline-card_title">Season 9</div>
+                    <div class="ag-timeline-card_desc">
+                        It is the sequel to Harry Potter and the Goblet of Fire (2005) and the fifth instalment in the Harry Potter film series.Its story follows Harry's fifth year at Hogwarts School of Witchcraft and Wizardry as the Ministry of Magic is in denial of Lord Voldemort's return.
+                    </div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_arrow"></div>
+              </div>
+            </div>
+  
+            <div class="js-timeline_item ag-timeline_item">
+              <div class="ag-timeline-card_box">
+                <div class="ag-timeline-card_meta-box">
+                  <div class="ag-timeline-card_meta">Harry Potter and the half blood prince</div>
+                </div>
+                <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                  <div class="ag-timeline-card_point">2009</div>
+                </div>
+              </div>
+              <div class="ag-timeline-card_item">
+                <div class="ag-timeline-card_inner">
+                  <div class="ag-timeline-card_img-box">
+                    <img src="img/hpb6.webp" class="ag-timeline-card_img" width="350" height="750" alt="" />
+                  </div>
+                  <div class="ag-timeline-card_info">
+                    <div class="ag-timeline-card_title">Season 8</div>
+                    <div class="ag-timeline-card_desc">
+                        The story follows Harry's sixth year at Hogwarts as he receives a mysterious textbook, falls in love, and attempts to retrieve a memory that holds the key to Lord Voldemort's downfall.
+                        Lord Voldemort tightens his grip on the wizarding and Muggle worlds.Snape makes an Unbreakable Vow with Narcissa to protect Draco and fulfil his task should he fail.
+                    </div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_arrow"></div>
+              </div>
+            </div>
+  
+            <div class="js-timeline_item ag-timeline_item">
+              <div class="ag-timeline-card_box">
+                <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                  <div class="ag-timeline-card_point">2010</div>
+                </div>
+                <div class="ag-timeline-card_meta-box">
+                  <div class="ag-timeline-card_meta">Harry Potter and the deathly hallows</div>
+                </div>
+              </div>
+              <div class="ag-timeline-card_item">
+                <div class="ag-timeline-card_inner">
+                  <div class="ag-timeline-card_img-box">
+                    <img src="img/hpb7.webp" class="ag-timeline-card_img" width="350" height="750" alt="" />
+                  </div>
+                  <div class="ag-timeline-card_info">
+                    <div class="ag-timeline-card_title">Season 7</div>
+                    <div class="ag-timeline-card_desc">
+                        The story follows Harry Potter, who has been asked by Dumbledore to find and destroy Lord Voldemort's secret to immortality-the Horcruxes. Voldemort confiscates Lucius Malfoy's wand; his own is powerless against Harry because it and Harry's wand are "brothers" by sharing the same phoenix feather core. During the move, Harry survives Voldemort's attack but Mad-Eye Moody and Hedwig are killed.
+                    </div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_arrow"></div>
+              </div>
+            </div>
+  
+            <div class="js-timeline_item ag-timeline_item">
+              <div class="ag-timeline-card_box">
+                <div class="ag-timeline-card_meta-box">
+                  <div class="ag-timeline-card_meta">Harry Potter and the cursed child</div>
+                </div>
+                <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                  <div class="ag-timeline-card_point">2011</div>
+                </div>
+              </div>
+              <div class="ag-timeline-card_item">
+                <div class="ag-timeline-card_inner">
+                  <div class="ag-timeline-card_img-box">
+                    <img src="img/hpb8.webp" class="ag-timeline-card_img" width="350" height="750" alt="" />
+                  </div>
+                  <div class="ag-timeline-card_info">
+                    <div class="ag-timeline-card_title">Season 6</div>
+                    <div class="ag-timeline-card_desc">
+                        It is the sequel to Harry Potter and the Deathly Hallows-Part 1 (2010) and the eighth and final instalment in the Harry Potter film series.[5] The story concludes Harry Potter's quest to find and destroy Lord Voldemort's Horcruxes in order to stop him once and for all.After burying Dobby, Harry Potter asks the goblin Griphook to help him, along with Ron Weasley and Hermione Granger, break into Bellatrix Lestrange's vault at Gringotts bank, suspecting a Horcrux is there. Griphook agrees, in exchange for the Sword of Gryffindor. Wandmaker Ollivander tells Harry that two wands taken from Malfoy Manor belonged to Bellatrix and Draco Malfoy; he senses Draco's wand has changed its allegiance to Harry, who captured it from Draco
+                    </div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_arrow"></div>
+              </div>
+            </div>
+            <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2017</div>
+                  </div>
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Fantastic Beasts</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="img/fb1.webp" class="ag-timeline-card_img" width="350" height="750" alt="" />
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_title">Season 6</div>
+                      <div class="ag-timeline-card_desc">
+                        J.K. Rowling invites you to explore a new era of the Wizarding World . . .
+                        When Magizoologist Newt Scamander arrives in New York, he intends his stay to be just a brief stopover. However, when his magical case is misplaced and some of Newt’s fantastic beasts escape, it spells trouble for everyone
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Crimes of Grindelwald</div>
+                  </div>
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2018</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="img/fb2.webp" class="ag-timeline-card_img" width="350" height="750" alt="" />
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_title">Season 6</div>
+                      <div class="ag-timeline-card_desc">
+                        The powerful Dark wizard Gellert Grindelwald was captured in New York with the help of Newt Scamander. But, making good on his threat, Grindelwald escapes custody and sets about gathering followers, most of whom are unsuspecting of his true agenda: to raise pure-blood wizards up to rule over all non-magical beings.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2022</div>
+                  </div>
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Secrets of Dumbledore</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="img/fb3.webp" class="ag-timeline-card_img" width="350" height="800" alt="" />
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_title">Season 6</div>
+                      <div class="ag-timeline-card_desc">
+                        Professor Albus Dumbledore knows the powerful Dark wizard Gellert Grindelwald is moving to seize control of the wizarding world. Unable to stop him alone, he entrusts Magizoologist Newt Scamander to lead an intrepid team of wizards, witches, and one brave Muggle baker on a dangerous mission, where they encounter old and new beasts and clash with Grindelwald’s growing legion of followers. But with the stakes so high, how long can Dumbledore remain on the sidelines?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+  
+            
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script type="text/javascript">
+
+    window.addEventListener("load", function () {
+
+    const loader = document.querySelector(".loader");
+
+    loader.className += " hidden"; // class "loader hidden"
+
+});
+
+  </script>
+</body>
+</html>
+  
