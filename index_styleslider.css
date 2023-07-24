@@ -94,24 +94,4 @@
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
   }
-  .back{
-    position: absolute;
-    top: 10px;
-    left: 0%;
-  }
-  .back2{
-    position: absolute;
-    left: 0%;
-    top: 101%;
-   
-  }
-  .back3{
-    position: absolute;
-    left: 0%;
-    top: 201%;
-  }
-  .back4{
-    position: absolute;
-    top: 302%;
-    left: 0%;
-  }
+ 
