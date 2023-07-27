@@ -114,6 +114,36 @@ function submit()
   {
    window.location="index_slytherin.html"
   }
+  if(g>r && g>h && g==s)
+  {
+    alert("OOPS PLAY AGAIN");
+    window.location="index_sorting hat.html"
+  }
+  if(g>r && g>s && g==h)
+  {
+    alert("OOPS PLAY AGAIN");
+    window.location="index_sorting hat.html"
+  }
+  if(g>s && g>h && g==r)
+  {
+    alert("OOPS PLAY AGAIN");
+    window.location="index_sorting hat.html"
+  }
+  if(s>r && s>g && s==h)
+  {
+    alert("OOPS PLAY AGAIN");
+    window.location="index_sorting hat.html"
+  }
+  if(s>g && s>h && r==s)
+  {
+    alert("OOPS PLAY AGAIN");
+    window.location="index_sorting hat.html"
+  }
+  if(r>g && r>s && r==h)
+  {
+    alert("OOPS PLAY AGAIN");
+    window.location="index_sorting hat.html"
+  }
      
 
 }
