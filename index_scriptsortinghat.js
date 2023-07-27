@@ -144,6 +144,26 @@ function submit()
     alert("OOPS ITS A TIE , PLAY AGAIN");
     window.location="index_sorting hat.html"
   }
+  if(g>s && g==r && g==h)
+  {
+    alert("OOPS ITS A TIE , PLAY AGAIN");
+    window.location="index_sorting hat.html"
+  }
+  if(g>r && g==s && g==h)
+  {
+    alert("OOPS ITS A TIE , PLAY AGAIN");
+    window.location="index_sorting hat.html"
+  }
+  if(g>h && g==r && g==s)
+  {
+    alert("OOPS ITS A TIE , PLAY AGAIN");
+    window.location="index_sorting hat.html"
+  }
+  if(r>g && s==r && r==h)
+  {
+    alert("OOPS ITS A TIE , PLAY AGAIN");
+    window.location="index_sorting hat.html"
+  }
      
 
 }
