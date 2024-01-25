@@ -18,6 +18,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  cursor: none !important;
 
   min-height: 100vh;
    /* background: radial-gradient(rgb(49, 14, 50), #1f1013); */
@@ -28,6 +29,13 @@
   
 
 } 
+#cursor {
+  position: absolute;
+ z-index: 9999;
+  transform: rotate(-12deg);
+  top:0px;
+  pointer-events: none;
+}
 .quiz-container{
   width: 900px;
   /* background: linear-gradient(-45deg, #3e3837, #4f2032, #284a57, #23564a) */

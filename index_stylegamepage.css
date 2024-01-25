@@ -117,3 +117,23 @@ body {
   color:#ffc800;
   size: 100%;
 }
+
+
+.logo-container {
+	position: fixed;
+	top: 20px;
+	left: 15px;
+	z-index: 100;
+  }
+  
+  .logo {
+   
+	
+	cursor: pointer;
+	transition: transform 0.3s ease-in-out;
+  }
+  
+  .logo:hover {
+	transform: scale(1.1);
+  }
+  
