@@ -96,6 +96,7 @@ body {
 .container{
   position: absolute;
   top: 50%;
+  cursor: none;
   left: 35%;
   background: rgb(233, 233, 233);
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
@@ -107,6 +108,7 @@ body {
   position: absolute;
   top: 50%;
   left: 55%;
+  cursor: none;
   background: rgb(233, 233, 233);
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
   width: 130px;
@@ -114,6 +116,7 @@ body {
   color: #fff;
 }
 .links{
+	cursor: none;
   color:#ffc800;
   size: 100%;
 }
@@ -129,7 +132,6 @@ body {
   .logo {
    
 	
-	cursor: pointer;
 	transition: transform 0.3s ease-in-out;
   }
   

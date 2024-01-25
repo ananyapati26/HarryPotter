@@ -13,8 +13,12 @@
 	<div class="logo-container">
         <img class="logo" src="pngwing.com (6).png" alt="Logo" height="10%" width="10%">
     </div>
-	<a href="index_homepage2.html" class="btn"><i class="fa-solid fa-house-chimney"></i></a>
-    <!-- <a href="index_homepage2.html"><img src="img/homeicon.png" width="100" height="100"/></a> -->
+	<div class="nav-container">
+        <ul class="nav-list">
+            <li class="nav-btn nav-home"><a href="index_homepage2.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+        </ul>
+    </div>
+   
 	<style>
 		body{
 			cursor: none !important;
@@ -68,6 +72,32 @@
     top:0px;
     pointer-events: none;
   }
+  
+.nav-container {
+    position: fixed;
+    top: 3px;
+    right: 0;
+    padding: 10px;
+    z-index: 100;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-btn {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav-btn a {
+    cursor:none;
+    text-decoration: none;
+    color: gold;
+    font-size: 24px;
+}
 		</style>
 	   
 </header>

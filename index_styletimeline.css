@@ -374,10 +374,12 @@ body {
 .logo {
    
     
-    cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
 
 .logo:hover {
     transform: scale(1.1);
+}
+.btn{
+  cursor: none;
 }

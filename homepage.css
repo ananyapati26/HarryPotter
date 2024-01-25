@@ -149,6 +149,7 @@
   }
   
   .sidebar-left nav ul li a {
+    cursor:none;
     text-decoration: none;
     color: #fff;
     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
