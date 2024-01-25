@@ -13,6 +13,7 @@
     width: 100vw;
     background-color: black;
     padding: 10px;
+    cursor: none !important;
    
 
 
@@ -43,6 +44,13 @@
     height: 70px;
     background-color: #f3bb10;
     border-radius: 8px 8px 0 0;
+  }
+  #cursor {
+    position: absolute;
+   z-index: 9999;
+    transform: rotate(-12deg);
+    top:0px;
+    pointer-events: none;
   }
   
   .container-nav {

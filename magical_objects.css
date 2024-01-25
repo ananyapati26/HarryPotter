@@ -19,7 +19,59 @@ body{
     border-width: 100%;
     scroll-behavior: smooth;
     align-items: center;
+    cursor: none !important;
+    
 }
+
+#cursor {
+  position: absolute;
+ z-index: 9999;
+  transform: rotate(-12deg);
+  top:0px;
+  pointer-events: none;
+}
+
+.expand {
+  background: transparent;
+  animation: moveCursor2 .5s forwards;
+  border: 1px solid #000;
+}
+
+@keyframes moveCursor1 {
+  from {
+      transform: scale(1);
+  }
+
+  to {
+      transform: scale(.8);
+  }
+}
+
+@keyframes moveCursor2 {
+  0% {
+      transform: scale(1);
+  }
+
+  50% {
+      transform: scale(2);
+  }
+
+  100% {
+      transform: scale(1);
+      opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 #drag, #spin{
@@ -119,3 +171,23 @@ body{
     }
 
   
+    .logo-container {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 100;
+    }
+    
+    .logo {
+     
+      
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    .logo:hover {
+      transform: scale(1.1);
+    }
+    
+    
+    
