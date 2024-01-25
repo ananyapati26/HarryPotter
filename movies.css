@@ -1,4 +1,4 @@
-/* @import url('https://fonts.cdnfonts.com/css/harry-potter'); */
+
 *{
     font-family: 'Cinzel', serif;
 }
@@ -9,9 +9,6 @@
       background-position: 200% center;
     }
   }
-
-
-    
 
 
 
@@ -29,34 +26,6 @@ body{
 }
 
 
-.logo{
-    display:flex;
-    padding: 1% 0%;
-    margin-top: 1%;
-    column-gap: 2%;
-}
-logo.lgo{
-   margin-left: 8%; 
-}
-.lgo:hover{
-    transform:rotateY(340deg);
-    transition-delay: 30ms;
-}
-
-
-
-
-.btn {
-    
-    margin-top: 2%;
-    background:transparent;
-    padding: 0 72.3%;
-   z-index: 1;
-    color: #f1b90f;
-    text-decoration: none;
-    width:100px;
-    height:30px;
-  }
 
 
 
@@ -70,7 +39,7 @@ logo.lgo{
 
 .expand {
     background: transparent;
-    animation: moveCursor2 .5s forwards;
+    /* animation: moveCursor2 .5s forwards; */
     border: 1px solid #000;
 }
 
@@ -102,6 +71,7 @@ logo.lgo{
 .container{
     border:1px solid goldenrod;
     position: absolute;
+    cursor: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -116,7 +86,7 @@ logo.lgo{
     height: 300px;
     position: absolute;
     top: 50%;
-    cursor: pointer;
+   cursor: none;
     transform: translate(0, -50%);
     border-radius: 20px;
     box-shadow: 0 30px 50px #505050;
@@ -147,7 +117,7 @@ logo.lgo{
     left: calc(50% + 440px);
 }
 
-/* here n = 0, 1, 2, 3,... */
+
 .slide .item:nth-child(n + 6){
     left: calc(50% + 660px);
     opacity: 0;
@@ -201,7 +171,7 @@ logo.lgo{
     text-decoration-line: none;
     padding: 10px 20px;
     border: none;
-    cursor: pointer;
+   cursor: none;
     opacity: 0;
     animation: animate 1s ease-in-out 0.6s 1 forwards;
 }
@@ -235,7 +205,7 @@ logo.lgo{
     height: 35px;
     border-radius: 8px;
     border: none;
-    cursor: pointer;
+    cursor: none;
     margin: 0 5px;
     border: 1px solid #000;
     transition: 0.3s;
@@ -255,8 +225,7 @@ logo.lgo{
 
 .logo {
    
-    
-    cursor: pointer;
+   
     transition: transform 0.3s ease-in-out;
 }
 
@@ -284,7 +253,11 @@ logo.lgo{
 }
 
 .nav-btn a {
+    cursor:none;
     text-decoration: none;
     color: gold;
     font-size: 24px;
+}
+button a{
+    cursor: none;
 }
