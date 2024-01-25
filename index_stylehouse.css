@@ -11,7 +11,7 @@
  body{ 
 
   display: flex;
-
+  
   justify-content: center;
 
   align-items: center;
@@ -20,12 +20,13 @@
   background-size: cover;
   cursor: none !important;
 
-  min-height: 100vh;
+  /* min-height: 100vh; */
    /* background: radial-gradient(rgb(49, 14, 50), #1f1013); */
   /* background: linear-gradient(90deg,#050b3a,#121a63, #940f39,#490d20) */
    /* background-color: #10141b; */
    /* background: #ffffff;  */
   background-image: url("img/houses3.jpg");
+  background-size: cover;
   
 
 } 
@@ -34,6 +35,7 @@
  z-index: 9999;
   transform: rotate(-12deg);
   top:0px;
+  
   pointer-events: none;
 }
 .quiz-container{

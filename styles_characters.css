@@ -119,6 +119,7 @@ h1 {
 }
 
 .logo-container {
+   
     position: fixed;
     top: 10px;
     left: 10px;
@@ -126,12 +127,13 @@ h1 {
 }
 
 .logo {
-   
+   cursor: none;
   
     transition: transform 0.3s ease-in-out;
 }
 
 .logo:hover {
+    cursor: none;
     transform: scale(1.1);
 }
 #cursor {
