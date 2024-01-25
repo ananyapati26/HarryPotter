@@ -373,11 +373,35 @@ body {
 
 .logo {
    
-    
-    cursor: pointer;
+  
     transition: transform 0.3s ease-in-out;
 }
 
 .logo:hover {
     transform: scale(1.1);
+}
+.nav-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 100;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-btn {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.nav-btn a {
+  cursor:none;
+  text-decoration: none;
+  color: gold;
+  font-size: 24px;
 }

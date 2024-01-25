@@ -39,6 +39,7 @@ h1 {
 }
 
 .card:hover {
+    cursor: none;
     transform: scale(1.05) translateY(-5px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
 }
@@ -111,6 +112,7 @@ h1 {
 }
 
 .nav-btn a {
+    cursor: none;
     text-decoration: none;
     color: gold;
     font-size: 24px;
@@ -125,8 +127,7 @@ h1 {
 
 .logo {
    
-    
-    cursor: pointer;
+  
     transition: transform 0.3s ease-in-out;
 }
 
