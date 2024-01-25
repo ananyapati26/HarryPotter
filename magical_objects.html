@@ -4,11 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
-        <title>Galley</title>
+        <title>Haary Potter</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
  
         <link rel="stylesheet" href="magical_objects.css">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="shortcut icon" type="x-icon" href="img/Harryicon.png" >
         <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
           <style>
     .loader {
@@ -40,25 +41,55 @@
   }
   }
   
-  .thumb {
-  height: 100px;
-  border: 1px solid black;
-  margin: 10px;
-  }
-    .lgo{
-    position: absolute;
-    top: 2%;
-  }
+  .logo-container {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+.logo {
+ 
+  
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.nav-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 100;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-btn {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav-btn a {
+    text-decoration: none;
+    color: gold;
+    font-size: 24px;
+}
+
     </style>
        
     </head>
 
 <body>
-  <img src="img/cursor3.png" id="cursor" alt="" srcset="">
  
-      <div class="logo-container">
-        <img class="logo" src="pngwing.com (6).png" alt="Logo" height="10%" width="10%">
-    </div>
     <div class="loader" style="background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); 
 
 
@@ -70,44 +101,146 @@
   
   
   
+  
   </div>
-  <audio src="Harry Potter Theme-freeringtonesfree.mobi.mp3"></audio>
-  
-  
- <div id="drag" style="position: relative;">
-    <div id="spin">
-     
-      <img src="thepensievepicx.jpg" alt="" >
-      <img src="sortinghatpic.jpg" alt="">
-      <img src="horcruxlocki.jpg" alt="">
-      <img src="timeturnerpicx.jpg" alt="">
-      <img src="mirroroferisedpicx.jpg" alt="">
-      <img src="elderwandpicx.jpg" alt="">
-      <img src="riddle's diary.jpg" alt="">
-       <img src="deathlyhallowswand.jpg" alt=""> 
-     
-    </div> 
-    <div id="ground"></div>
+  <div class="logo-container">
+    <img class="logo" src="pngwing.com (6).png" alt="Logo" height="10%" width="10%">
 </div>
- 
+<div class="nav-container">
+  <ul class="nav-list">
+      <li class="nav-btn nav-home"><a href="index_homepage2.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+  </ul>
+</div>
+<img src="img/cursor3.png" id="cursor" alt="" srcset="">
+  <div id="drag-container">
+    
+    <div id="info-section">
+      <h2>Card Name</h2>
+      
+    </div>
+    
+    <div id="spin-container">
+      <img data-name="The pensive" src="https://apensieveforyourthoughts.files.wordpress.com/2017/01/9159e87fd98159872c3334b2d0e98a61.png" />
+
+  
+        <img data-name="Sorting Hat" src="https://e1.pxfuel.com/desktop-wallpaper/351/545/desktop-wallpaper-sorting-hat.jpg" />
+  
+        <img data-name="Horcrux Locket" src="https://w.forfun.com/fetch/c5/c506142099d05bde77a8f24a3ae48b15.jpeg" />
+  
+        <img data-name="Time Turner" src="https://wallpapercave.com/wp/wp2216445.jpg" />
+        <img  data-name ="Mirror of Erised" src="https://images.ctfassets.net/usf1vwtuqyxm/2uo8UV2ZCMIyuYI6KSwo0g/ce1d7d9cd78c8613492fbdd721d4a734/MirrorOfErised_PM_B1C12M3_HarryInFrontOfTheMirrorOfErised_Moment.jpg?fm=jpg&q=70&w=2560" />
+        <img data-name="Elder Wand "src="https://i.pinimg.com/236x/5c/1c/84/5c1c84c7cad4d8907f3a73a37bc80f3b.jpg" />
+        <img data-name="Riddle's Diary" src="https://i.pinimg.com/originals/d2/bd/18/d2bd18164b3234ee564075aa9c808d46.jpg" />
+       
+  
+
+  
+      
+      <p>Magical Objects</p>
+    </div>
+    <div id="ground"></div>
+  </div>
+  
   <script src="magical_objects.js"></script>
-  <footer>
-    <div class="sidebar-left">
-      <nav>
-        <ul>
-          <li class="nav-btn nav-home"><a href="index_homepage2.html"><i class="fa-solid fa-house-chimney"></i></a></li>
-          </ul>
-          </nav>
-  </footer>
     <script type="text/javascript">
 
     window.addEventListener("load", function () {
 
     const loader = document.querySelector(".loader");
 
-    loader.className += " hidden"; // class "loader hidden"
+    loader.className += " hidden"; 
 
 });
+
+
+function init() {
+    document.onmousemove = mousemove;
+}
+
+function mousemove(event) {
+    var mouse_x = event.clientX;
+    var mouse_y = event.clientY;
+
+    var fl = document.getElementById('flashlight');
+    fl.style.transform = 'translate(calc(' + mouse_x + 'px - 50vw), ' + 'calc(' + mouse_y + 'px - 50vh))';
+}
+
+init();
+
+var image = document.getElementById('cursor');
+
+
+document.addEventListener('mousemove', function(event) {
+  
+  image.style.left = event.pageX + 'px';
+  image.style.top = event.pageY + 'px';
+});
+
+$(document).ready(function() {
+  var canvas = $('#canvas')[0];
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  
+  if(canvas.getContext) {
+    var ctx = canvas.getContext('2d');
+    var w = canvas.width;
+    var h = canvas.height;
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 1;
+    ctx.lineCap = 'round';
+    
+    
+    var init = [];
+    var maxParts = 1000;
+    for(var a = 0; a < maxParts; a++) {
+      init.push({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        l: Math.random() * 1,
+        xs: -4 + Math.random() * 10 + 2,
+        ys: Math.random() * 10 + 10
+      })
+    }
+    
+    var particles = [];
+    for(var b = 0; b < maxParts; b++) {
+      particles[b] = init[b];
+    }
+    
+    function draw() {
+      ctx.clearRect(0, 0, w, h);
+      for(var c = 0; c < particles.length; c++) {
+        var p = particles[c];
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y);
+        ctx.lineTo(p.x + p.l * p.xs, p.y + p.l * p.ys);
+        ctx.stroke();
+      }
+      move();
+    }
+    
+    function move() {
+      for(var b = 0; b < particles.length; b++) {
+        var p = particles[b];
+        p.x += p.xs;
+        p.y += p.ys;
+        if(p.x > w || p.y > h) {
+          p.x = Math.random() * w;
+          p.y = -20;
+        }
+      }
+    }
+    
+    setInterval(draw, 30);
+    
+  }
+});
+
+
+window.onload = function(){
+  //hide the preloader
+  document.querySelector("#pre-loader").style.display = "none";
+}
 
   </script>
  
