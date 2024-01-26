@@ -1,15 +1,4 @@
-// const cursor = document.querySelector('.cursor');
 
-// document.addEventListener('mousemove', e => {
-//     cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
-// });
-
-// document.addEventListener('click', e => {
-//     cursor.classList.add("expand");
-//     setTimeout(() => {
-//         cursor.classList.remove("expand");
-//     }, 500);
-// });
 
 let next = document.querySelector('.next')
 let prev = document.querySelector('.prev')
@@ -41,9 +30,8 @@ init();
 
 var image = document.getElementById('cursor');
 
-// Add event listener for mouse move
 document.addEventListener('mousemove', function(event) {
-  // Set the image position to follow the cursor
+  
   image.style.left = event.pageX + 'px';
   image.style.top = event.pageY + 'px';
 });

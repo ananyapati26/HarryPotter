@@ -10,11 +10,9 @@
   <title>Haary Potter</title>
 </head>
 <style>
-  .btn i{
-    font-size: 2em;
-
-    color: #f1b90f;
-  }
+ body{
+  cursor:none
+ }
   .video{
     position: absolute;
     top: 25%;
@@ -27,13 +25,66 @@
     top:0px;
     pointer-events: none;
   }
+  .logo-container {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+}
+
+.logo {
+   
+   
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 100;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-btn {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav-btn a {
+    cursor:none;
+    text-decoration: none;
+    color: rgb(249, 215, 23);
+    font-size: 24px;
+}
 
 </style>
 <body style="background: url('img/ravenclaw.jpg'); cursor: none !important;">
 
   <img src="img/cursor3.png" id="cursor" alt="" srcset="">
-    <!-- <a href="index_gamespage.html"><img src="img/home2-removebg-preview.png" width="80" height="50"/></a> -->
-    <a href="index_gamespage.html" class="btn"><i class="fa-solid fa-house-chimney"></i></a>
+
+  <div class="logo-container">
+    <img class="logo" src="pngwing.com (6).png" alt="Logo" height="10%" width="10%">
+</div>
+
+<div class="nav-container">
+    <ul class="nav-list">
+        <li class="nav-btn nav-home"><a href="index_gamespage.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+    </ul>
+</div>
+
+   
+  
     <div class="video">
       <video width="700px" controls poster="img/congoravenclaw.jpg">
         <source src="img/RAVENCLAW [HOGWARTS HOUSES].mp4" type="video/mp4">
@@ -58,9 +109,9 @@ init();
 
 var image = document.getElementById('cursor');
 
-// Add event listener for mouse move
+
 document.addEventListener('mousemove', function(event) {
-  // Set the image position to follow the cursor
+
   image.style.left = event.pageX + 'px';
   image.style.top = event.pageY + 'px';
 });
