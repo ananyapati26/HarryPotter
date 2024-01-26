@@ -140,10 +140,10 @@ body{
     text-align: left;
     color:#000000;
     padding: 2rem;
-    background: rgba( 34, 26, 77, 0.55 );
+        background: rgba( 216, 216, 222, 0.45 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 5.5px );
-    -webkit-backdrop-filter: blur( 5.5px );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
     border-radius: 10px;
     font-weight: bolder;
     transform: translate(0, -50%);
