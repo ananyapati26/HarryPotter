@@ -94,6 +94,7 @@ body {
 	}
 }
 .container{
+	cursor: none;
   position: absolute;
   top: 50%;
   left: 35%;
@@ -104,6 +105,7 @@ body {
   color: #fff;
 }
 .sort-btn2{
+	cursor: none;
   position: absolute;
   top: 50%;
   left: 55%;
@@ -114,6 +116,7 @@ body {
   color: #fff;
 }
 .links{
+	cursor: none;
   color:#ffc800;
   size: 100%;
 }
@@ -127,13 +130,35 @@ body {
   }
   
   .logo {
-   
-	
-	cursor: pointer;
+
 	transition: transform 0.3s ease-in-out;
   }
   
   .logo:hover {
 	transform: scale(1.1);
   }
-  
+  .nav-container {
+    position: fixed;
+    top: 10px;
+    right: 0;
+    padding: 10px;
+    z-index: 100;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-btn {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav-btn a {
+    cursor:none;
+    text-decoration: none;
+    color: gold;
+    font-size: 24px;
+}
